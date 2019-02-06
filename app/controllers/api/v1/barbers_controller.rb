@@ -1,0 +1,12 @@
+class Api::V1::BarbersController < ApplicationController
+ skip_before_action :authorized, 
+
+
+  def index
+
+    @barber = Barber.all
+
+  end
+
+
+end
